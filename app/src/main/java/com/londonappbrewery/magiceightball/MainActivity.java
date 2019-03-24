@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button askButton = (Button) findViewById(R.id.askButton);
+        Button myButton = (Button) findViewById(R.id.askButton);
 
         final ImageView ballDisplay = (ImageView) findViewById(R.id.image_eightBall);
 
-        final int[] ballArray =
+        final int[] ballArray = new int[]
                 {
                         R.drawable.ball1,
                         R.drawable.ball2,
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                         R.drawable.ball4,
                         R.drawable.ball5
                 };
-        askButton.setOnClickListener(new View.OnClickListener() {
+        myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Random randomNumberGenerator = new Random();
